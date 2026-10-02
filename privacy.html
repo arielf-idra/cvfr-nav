@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVFR Nav — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --bg:#fff; --muted:#6e6e73; --link:#0066cc; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --bg:#1c1c1e; --muted:#a1a1a6; --link:#4da3ff; } }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--fg);
+         background: var(--bg); margin: 0; padding: 32px 16px 64px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 8px; } h2 { font-size: 20px; margin-top: 32px; }
+  a { color: var(--link); } code { font-size: 15px; }
+  nav { margin-bottom: 24px; color: var(--muted); font-size: 15px; }
+  nav a { margin-right: 16px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body><main>
+<nav><a href="./">CVFR Nav</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+<h1>CVFR Nav — Privacy Policy</h1>
+<p>Effective: 1 October 2026</p>
+<p>CVFR Nav is a moving-map assistant for VFR pilots in Israel. This policy covers the version of the
+app on the App Store.</p>
+<h2>What the app collects</h2>
+<p>Nothing. The developer receives no data from the App Store version of CVFR Nav: no account, no
+analytics, no advertising, no tracking.</p>
+<h2>What stays on your device</h2>
+<ul>
+<li><strong>Your position</strong>, from the device's location services, is used on the device to draw the map
+  and raise alerts. It is not sent to the developer.</li>
+<li><strong>Recorded flights</strong> (track, altitude, the device's motion and barometer readings, events) and,
+  if you switch it on, <strong>cockpit audio</strong> are saved in the app's own storage on your device. They
+  leave it only when you share or export a flight yourself, to the destination you choose.</li>
+<li><strong>Photos of the sky</strong> for the cloud-cover estimate are analysed on the device and not stored or
+  sent anywhere.</li>
+<li><strong>Settings and flight plans</strong> are stored on the device.</li>
+</ul>
+<h2>Services the app contacts</h2>
+<ul>
+<li><strong>NOTAM feed</strong> — the app downloads the public NOTAM list from
+  <code>arielf-idra.github.io</code> (GitHub Pages). The request carries no information about you or your
+  position; like any web request it reaches GitHub with your device's IP address
+  (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</li>
+<li><strong>Edition file</strong> — the app reads which edition of the CAA chart is currently published from
+  <code>arielf-idra.github.io/cvfr-nav/edition.json</code> (GitHub Pages), to tell you when its data is out
+  of date. The request carries nothing about you or your position.</li>
+<li><strong>Radio reports</strong> — while the app is open or recording a flight, it asks once a minute for the
+  runway, wind and QNH read from public air traffic radio, from the developer's isr-atc service
+  (<code>llhz-now.vercel.app</code>, hosted by Vercel). The request names only the airfield or unit; it
+  carries nothing about you or your position. Like any web request it reaches the host with your
+  device's IP address (<a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>).</li>
+<li><strong>Apple Maps</strong> — the map background and the place name shown when you tap the map come from
+  Apple's map services, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+</ul>
+<h2>Test builds (TestFlight)</h2>
+<p>Pre-release builds given to invited test pilots send recorded flights to the developer while
+"Send recordings to the developer" is on in Settings — on by default in those builds, and the
+tester can switch it off: the track, the sensor log, the settings the flight was recorded with,
+crash reports, the name the tester enters, and the cockpit audio only if its own switch (off by
+default) is on too. The App Store version cannot send anything. They
+are stored in Apple's CloudKit for the developer to find problems, and deleted on request.</p>
+<h2>Children</h2>
+<p>The app is not directed at children and collects nothing from anyone.</p>
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published at this address with a new effective date.
+Questions: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a>.</p>
+<footer>CVFR Nav — an assistance tool for VFR pilots in Israel. Not affiliated with or endorsed by the
+Civil Aviation Authority of Israel. Contact: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a><br>
+© 2026 Ariel Feldman. All rights reserved.</footer>
+</main></body>
+</html>
