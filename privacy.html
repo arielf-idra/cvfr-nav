@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVFR Nav — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --bg:#fff; --muted:#6e6e73; --link:#0066cc; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --bg:#1c1c1e; --muted:#a1a1a6; --link:#4da3ff; } }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--fg);
+         background: var(--bg); margin: 0; padding: 32px 16px 64px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 8px; } h2 { font-size: 20px; margin-top: 32px; }
+  a { color: var(--link); } code { font-size: 15px; }
+  nav { margin-bottom: 24px; color: var(--muted); font-size: 15px; }
+  nav a { margin-right: 16px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body><main>
+<nav><a href="./">CVFR Nav</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+<h1>CVFR Nav — Privacy Policy</h1>
+<p>Effective: 8 October 2026</p>
+<p>CVFR Nav is a moving-map assistant for VFR pilots in Israel. This policy covers the version of the
+app on the App Store.</p>
+<h2>What the app collects</h2>
+<p>The developer receives no data from the App Store version of CVFR Nav: no account, no
+analytics, no advertising, no tracking. (The developer's own services are hosted by Vercel, which
+keeps short-lived request logs — see <strong>Services the app contacts</strong>.) The one thing that leaves the device on its own is an
+approximate position for the weather forecast, sent to Open-Meteo and not linked to you (see
+<strong>Weather</strong> below).</p>
+<h2>What stays on your device</h2>
+<ul>
+<li><strong>Your position</strong>, from the device's location services, is used on the device to draw the map
+  and raise alerts. It is not sent to the developer.</li>
+<li><strong>Recorded flights</strong> (track, altitude, the device's motion and barometer readings, events, a
+  line about the device's health once a minute — the app's processor use, battery level, how
+  warm the device is, whether Low Power Mode is on — and what the map showed during the flight:
+  the active flight plan's route and aircraft — callsign, type, persons on board, not your filed
+  plan's text with your name, licence and phone, and not the weight-and-balance load (the weights
+  of pilot and passengers), which stays with the saved plan on the device — the NOTAMs in force,
+  the radio reports and the aerodrome weather reports) and,
+  if you switch it on, <strong>cockpit audio</strong> are saved in the app's own storage on your device. They
+  leave it when you share or export a flight yourself, to the destination you choose, and — with
+  <strong>Sync flights with iCloud</strong> on (Settings → Recording and audio; on unless you switch it off) —
+  in your own iCloud Drive, so your other devices signed in to the same Apple Account have the
+  same flights — and the flight videos you make, which leave the device a week after they reached
+  iCloud and stay there until you delete them. That copy is stored by Apple under your account
+  (<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>); the developer cannot read it.
+  It is also shown in the Files app (iCloud Drive → CVFR Nav). Each flight goes with its
+  signature, made with a key that never leaves this device, and that key's public half — the same
+  for every flight from the device — so your other devices can tell when a flight was changed
+  after it was signed. Deleting a flight in the app deletes it on all your devices.
+  CVFR Nav assumes your Apple Account is yours alone and that every device signed in to it is
+  your own: an account or a device shared between several people (a club iPad, say) shares
+  their flights and cockpit audio too, at the account holder's own choice and responsibility —
+  switch sync off on such a device.</li>
+<li><strong>Flight videos</strong> you make are kept on the device until you delete them (or, with sync on, a
+  week after they reached iCloud, as above). <strong>Save to Photos</strong> adds a video to your photo
+  library when you tap it; the app asks only to add photos, never to read them.</li>
+<li><strong>Flight briefs</strong> (PDF) hold the plan with your name, licence and phone. The app keeps them
+  only until you have shared or saved them; they are cleared at the next launch.</li>
+<li><strong>Weather</strong>: for the forecast, the app sends Open-Meteo (open-meteo.com) points rounded to
+  about a kilometre — along a flight plan's route, the aircraft's position for the wind shown on
+  the map (again only after 10 NM or 30 minutes), a spot you tap — with the hours wanted;
+  nothing else about you. Open-Meteo keeps its
+  request logs (which include those points and your internet address) for up to 90 days to run
+  its service, and shares them with no one (<a href="https://open-meteo.com/en/terms">its terms</a>). The
+  aerodrome reports come from the Israel Meteorological Service (ims.gov.il) and NOAA's Aviation
+  Weather Center (aviationweather.gov) and need nothing from you. Nothing goes to the developer.</li>
+<li><strong>The barometer offset</strong> the app learns for your phone is kept on the device.</li>
+<li><strong>Photos of the sky</strong> for the cloud-cover estimate are analysed on the device and not stored or
+  sent anywhere.</li>
+<li><strong>Settings and saved flight plans</strong> are stored on the device (a recording keeps a copy of the
+  plan it was flown with, as above).</li>
+</ul>
+<h2>Services the app contacts</h2>
+<ul>
+<li><strong>NOTAM feed</strong> — the app downloads the public NOTAM list from
+  <code>arielf-idra.github.io</code> (GitHub Pages). The request carries no information about you or your
+  position; like any web request it reaches GitHub with your device's IP address
+  (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</li>
+<li><strong>Edition file</strong> — the app reads which edition of the CAA chart is currently published from
+  <code>arielf-idra.github.io/cvfr-nav/edition.json</code> (GitHub Pages), to tell you when its data is out
+  of date. The request carries nothing about you or your position.</li>
+<li><strong>Radio reports</strong> — while the app is open or recording a flight, it asks once a minute for the
+  runway, wind and QNH read from public air traffic radio, from the developer's isr-atc service
+  (<code>llhz-now.vercel.app</code> and <code>isr-atc.idra-tech.io</code>, hosted by Vercel). The request names only the airfield or unit; it
+  carries nothing about you or your position. Like any web request it reaches the host with your
+  device's IP address; Vercel keeps short-lived request logs (IP address, time, path), which the
+  developer does not use to identify anyone
+  (<a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>).</li>
+<li><strong>Aerodrome weather</strong> — every 10 minutes while the app is open or recording, the app reads the
+  aerodrome reports and forecasts from the Israel Meteorological Service (<code>ims.gov.il</code>) and NOAA's
+  Aviation Weather Center (<code>aviationweather.gov</code>). The requests carry nothing about you or your
+  position; like any web request they reach those hosts with your device's IP address.</li>
+<li><strong>CVFR Nav's weather service</strong> — every 10 minutes while the app is open or recording, the app
+  asks the developer's own service (on Vercel) for the Israel Meteorological Service's station
+  readings. The request carries the app's key and nothing about you or your position; like any web
+  request it reaches the host with your device's IP address. The developer's hosting provider,
+  Vercel, keeps short-lived request logs (IP address, time, path), which the developer does not use
+  to identify anyone (<a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>).</li>
+<li><strong>Apple Maps</strong> — the map background and the place name shown when you tap the map come from
+  Apple's map services, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+</ul>
+<h2>Test builds (TestFlight)</h2>
+<p>Pre-release builds given to invited test pilots send recorded flights to the developer while
+"Send recordings to the developer" is on in Settings — on by default in those builds, and the
+tester can switch it off: the track, the sensor log, the settings the flight was recorded with,
+the plan flown (route, callsign, aircraft, persons on board — not the filed plan's text nor the
+weight-and-balance load), the device-health lines (processor use, battery, how warm, Low Power
+Mode), the
+NOTAMs and radio reports seen during the flight, crash reports, the name the tester enters, the
+flight's signature with this device's public signing key (the same on every flight from the
+device, so it identifies the device; the developer's check notes a signing key not seen before
+for that tester), and the
+cockpit audio only if its own switch (off by default) is on too. The App Store version cannot send anything. They
+are stored in Apple's CloudKit for the developer to find problems, and deleted on request.</p>
+<h2>Children</h2>
+<p>The app is not directed at children and collects nothing from anyone.</p>
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published at this address with a new effective date.
+Questions: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a>.</p>
+<footer>CVFR Nav — an assistance tool for VFR pilots in Israel. Not affiliated with or endorsed by the
+Civil Aviation Authority of Israel. Contact: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a><br>
+© 2026 Ariel Feldman. All rights reserved.</footer>
+</main></body>
+</html>
