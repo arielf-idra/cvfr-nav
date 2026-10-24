@@ -2,5 +2,8 @@
  "internal": {
   "version": "1.0.0",
   "build": 1460
+ },
+ "pcVideo": {
+  "version": "0.12.0"
  }
 }
