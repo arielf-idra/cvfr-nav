@@ -44,12 +44,18 @@ sign in with your Google account and allow it, and only when you have turned the
 described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <ul>
 <li><strong>What the program asks Google for:</strong> permission to upload videos to your YouTube channel
-  (<code>youtube.upload</code>), and your Google account's email address, to show you which account is signed
-  in. It cannot read, change or delete your existing videos, and cannot see anything else in your
-  Google account.</li>
+  (<code>youtube.upload</code>); permission to manage your YouTube account (<code>youtube</code>), which the program uses
+  only to list your own playlists, make a playlist when you ask it to, and add the video it has just
+  uploaded to the playlist you chose (YouTube has no narrower permission for playlists); and your
+  Google account's email address, to show you which account is signed in. The program never
+  changes or deletes your existing videos or playlists, never reads your other YouTube data (such
+  as comments, subscriptions or history), and cannot see anything else in your Google account.</li>
 <li><strong>What it sends to YouTube:</strong> the video you chose to make, its title, its description (the
   video's chapters and a line naming the program) and the privacy setting you chose — Private,
-  Unlisted or Public. Nothing else.</li>
+  Unlisted or Public (with a playlist chosen, the playlist's own); a new playlist's name and privacy
+  when you make one; and which playlist the video goes into. Nothing else.</li>
+<li><strong>What it reads from YouTube:</strong> the names, links and privacy of your own playlists, to offer them
+  to you. They are shown in the program and not kept.</li>
 <li><strong>What it keeps:</strong> the permission Google gives back (a "refresh token") and your email address,
   on your computer only, encrypted with Windows' own data protection so that only your Windows user
   can read them. They are never sent to the developer or anyone else.</li>
