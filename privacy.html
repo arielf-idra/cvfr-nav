@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CVFR Nav — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1d1d1f; --bg:#fff; --muted:#6e6e73; --link:#0066cc; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f5f5f7; --bg:#1c1c1e; --muted:#a1a1a6; --link:#4da3ff; } }
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--fg);
+         background: var(--bg); margin: 0; padding: 32px 16px 64px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 8px; } h2 { font-size: 20px; margin-top: 32px; }
+  a { color: var(--link); } code { font-size: 15px; }
+  nav { margin-bottom: 24px; color: var(--muted); font-size: 15px; }
+  nav a { margin-right: 16px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body><main>
+<nav><a href="./">CVFR Nav</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+<h1>CVFR Nav — Privacy Policy</h1>
+<p>Effective: 31 October 2026</p>
+<!-- Published 2026-10-27 (owner: "Publish"): the drafts since 2026-10-19 — auto record, remembered
+headsets, the plan email, background location while airborne, the GoPro's background Bluetooth, the
+approach debrief file, the US region's METARs, Android's planning sync. Updated 2026-10-29 (review
+2026-10-29, A3): the US region's NOTAM requests and airport reports, App Attest's certification by
+Apple. 2026-10-30 (owner: "We don't have android users yet"): the Android section taken out until
+the Android app reaches people outside the team; restore it from git (before 2026-10-30) then.
+2026-10-31 (owner: "its ok"): the US region's FAA sectional charts, TFR shapes (no position), the
+bundled FAA obstacle file and the FAA airport diagrams downloaded from the developer's site. -->
+
+<p>CVFR Nav is a moving-map assistant for VFR pilots in Israel. This policy covers the version of the
+app on the App Store.</p>
+<h2>What the app collects</h2>
+<p>The developer receives no data from the App Store version of CVFR Nav: no account, no
+analytics, no advertising, no tracking. (The developer's own services are hosted by Vercel, which
+keeps short-lived request logs — see <strong>Services the app contacts</strong>.) The one thing that leaves the device on its own is an
+approximate position for the weather forecast, sent to Open-Meteo and not linked to you (see
+<strong>Weather</strong> below).</p>
+<h2>What stays on your device</h2>
+<ul>
+<li><strong>Your position</strong>, from the device's location services, is used on the device to draw the map
+  and raise alerts. It is not sent to the developer.</li>
+<li><strong>Recorded flights</strong> (track, altitude, the device's motion and barometer readings, events, a
+  line about the device's health once a minute — the app's processor use, battery level, how
+  warm the device is, whether Low Power Mode is on — and what the map showed during the flight:
+  the active flight plan's route and aircraft — callsign, type, persons on board, not your filed
+  plan's text with your name, licence and phone, and not the weight-and-balance load (the weights
+  of pilot and passengers), which stays with the saved plan — the NOTAMs in force,
+  the radio reports and the aerodrome weather reports) and,
+  if you switch it on, <strong>cockpit audio</strong> are saved in the app's own storage on your device. They
+  leave it when you share or export a flight yourself, to the destination you choose, and — with
+  <strong>Sync flights and plans with iCloud</strong> on (Settings → Data and about; on unless you switch it off) —
+  in your own iCloud Drive, so your other devices signed in to the same Apple Account have the
+  same flights — and the flight videos you make, which leave the device a week after they reached
+  iCloud and stay there until you delete them. That copy is stored by Apple under your account
+  (<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>); the developer cannot read it.
+  It is also shown in the Files app (iCloud Drive → CVFR Nav). Each flight goes with its
+  signature, made with a key that never leaves this device, and that key's public half — the same
+  for every flight from the device — so your other devices can tell when a flight was changed
+  after it was signed. Deleting a flight in the app deletes it on all your devices.
+  Beside each flight the app keeps its <strong>approach debrief</strong> (<code>&lt;flight&gt;.approaches.json</code>: each
+  approach's runway, heights, speeds and track as the flight page judges them, worked out from the
+  flight itself) — on the device and, with that sync on, in the same iCloud folder, for your own
+  video tool on your PC; it goes and is deleted with its flight, and holds nothing the flight does
+  not.
+  Each flight file also names the device it was recorded on: the fingerprint of that device's
+  signing key (a short code, the same on every flight from the device), the exact device model
+  and the system version. It travels with the flight wherever the flight goes — a flight you
+  share or export, the iCloud sync and a test build's upload (below).
+  CVFR Nav assumes your Apple Account is yours alone and that every device signed in to it is
+  your own: an account or a device shared between several people (a club iPad, say) shares
+  their flights and cockpit audio too, at the account holder's own choice and responsibility —
+  switch sync off on such a device.</li>
+<li><strong>Flight videos</strong> you make are kept on the device until you delete them (or, with sync on, a
+  week after they reached iCloud, as above). <strong>Save to Photos</strong> adds a video to your photo
+  library when you tap it; the app asks only to add photos, never to read them.</li>
+<li><strong>Saved plans and planning details</strong> — each plan (with its weight-and-balance load: the
+  weights of pilot and passengers), your pilot details (name, licence, phone), each aircraft's
+  record with its free-flight weight-and-balance load (the weights you entered for a flight
+  without a plan) and the flight-planning settings — are kept in the app's storage and, with <strong>Sync flights
+  and plans with iCloud</strong> on and the device signed in to iCloud with iCloud Drive on, in your own
+  iCloud Drive (Files → iCloud Drive → CVFR
+  Nav → Planning), so your other devices on the same Apple Account have the same plans (since
+  2026-10-18). That copy is stored by Apple under your account; the developer cannot read it.
+  Deleting a plan deletes it on all your devices.</li>
+<li><strong>The flight plan email</strong>: when you tap to send a plan, the app hands the email — the plan's
+  ICAO text, a short note, and your name, licence number and phone from your pilot details — to
+  your own default mail app as a link, addressed to the briefing office (ais@iaa.gov.il). Nothing
+  is sent by the app itself, and nothing goes to the developer: you send it, or not, from your
+  mail app, under that app's own terms.</li>
+<li><strong>Flight briefs</strong> (PDF) hold the plan with your name, licence and phone. The app keeps them
+  only until you have shared or saved them; they are cleared at the next launch.</li>
+<li><strong>Weather</strong>: for the forecast, the app sends Open-Meteo (open-meteo.com) points rounded to
+  about a kilometre — along a flight plan's route, the aircraft's position for the wind shown on
+  the map (when it has moved 10 NM, or every 30 minutes), a spot you tap — with the hours wanted;
+  nothing else about you. Open-Meteo keeps its
+  request logs (which include those points and your internet address) for up to 90 days to run
+  its service, and shares them with no one (<a href="https://open-meteo.com/en/terms">its terms</a>). The
+  aerodrome reports come from the Israel Meteorological Service (ims.gov.il) and NOAA's Aviation
+  Weather Center (aviationweather.gov) and need nothing from you. Nothing goes to the developer.</li>
+<li><strong>The barometer offset</strong> the app learns for your phone is kept on the device.</li>
+<li><strong>Photos of the sky</strong> for the cloud-cover estimate are analysed on the device and not stored or
+  sent anywhere.</li>
+<li><strong>Your GoPro</strong>, if you pair one (Settings → Recording and audio → GoPro): the app talks to that
+  camera over Bluetooth, and only to it — to set its date, time and time zone from your phone and
+  to start and stop its recording with yours. iOS asks for Bluetooth only when you tap "Pair a
+  GoPro". The app keeps the camera's name and the identifier iOS gives it on this phone; nothing
+  about the camera or its footage is sent anywhere, and the app never reads the camera's media.
+  What happened (clock set, recording started or stopped, the HiLight tags sent while recording)
+  is written into the recorded flight. With auto record on, the app may start and stop the camera
+  while it runs in the background — iOS's Bluetooth background mode, used only to reach the paired
+  camera by its identifier, never to look for other devices.</li>
+<li><strong>Auto record</strong> (off unless you choose a headset in Settings → Recording and audio → Auto
+  record): when that headset connects, the app starts an ordinary recording, and stops it a few
+  minutes after it disconnects. To hear the headset connect, iOS must keep the app running, so
+  while auto record is on the app keeps a <strong>coarse location</strong> (about 3 km, from cell towers and
+  Wi-Fi, no GPS; iOS shows the location arrow) — in the background on the ground with nothing recording the
+  GPS, the alerts and the weather requests stop. (In the air the app keeps running in the
+  background with its GPS, so the alerts go on whether or not you record; on the ground it stops.)
+  That coarse location is used only to keep the
+  app running; it is not stored and not sent anywhere. To offer the headsets to choose from, the
+  app remembers the headsets it has seen as an audio route (at most eight: the name iOS gives
+  each and its Bluetooth device address, or a wired port's identifier) — only while auto record
+  is on; they stay on the device and are never synced.</li>
+<li><strong>Settings</strong> other than the flight-planning ones stay on the device (the map, alerts, audio
+  and recording settings are never synced); a recording keeps a copy of the plan it was flown
+  with, as above.</li>
+<li><strong>The diagnostic log</strong> — a rolling log of what the app did (screens opened, flights saved and
+  replayed, memory use, problems), kept with iOS's crash reports in the app's own storage on the
+  device so a problem can be found afterwards. It holds no names, no audio and no NOTAM text;
+  positions in it are rounded to about a kilometre. It keeps about two days and at most 1 MB,
+  the oldest deleted first. It never leaves the device on its own: only when you share it
+  yourself (Settings → Data and about → Share diagnostics), to the destination you choose.</li>
+</ul>
+<h2>Services the app contacts</h2>
+<ul>
+<li><strong>NOTAM feed</strong> — the app downloads the public NOTAM list from
+  <code>arielf-idra.github.io</code> (GitHub Pages). The request carries no information about you or your
+  position; like any web request it reaches GitHub with your device's IP address
+  (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</li>
+<li><strong>Edition file</strong> — the app reads which edition of the CAA chart is currently published from
+  <code>cvfr.idra-tech.io/edition.json</code> (GitHub Pages), to tell you when its data is out
+  of date. The request carries nothing about you or your position.</li>
+<li><strong>Version file</strong> — at launch the app reads <code>cvfr.idra-tech.io/version.json</code>
+  (GitHub Pages) to tell you when a newer version is available: the App Store's line for the App
+  Store version, the TestFlight lines (internal or external testers) for a test build. The
+  comparison is made on the device; the request carries nothing about you, your version or your
+  position.</li>
+<li><strong>Radio reports</strong> — while the app is open or recording a flight, it asks once a minute for the
+  runway, wind and QNH read from public air traffic radio, from the developer's isr-atc service
+  (<code>llhz-now.vercel.app</code> and <code>isr-atc.idra-tech.io</code>, hosted by Vercel). The request names only the airfield or unit; it
+  carries nothing about you or your position. Like any web request it reaches the host with your
+  device's IP address; Vercel keeps short-lived request logs (IP address, time, path), which the
+  developer does not use to identify anyone
+  (<a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>).</li>
+<li><strong>Aerodrome weather</strong> — every 10 minutes while the app is open or recording, the app reads the
+  aerodrome reports and forecasts from the Israel Meteorological Service (<code>ims.gov.il</code>) and NOAA's
+  Aviation Weather Center (<code>aviationweather.gov</code>). The requests carry nothing about you or your
+  position; like any web request they reach those hosts with your device's IP address.</li>
+<li><strong>CVFR Nav's weather service</strong> — every 10 minutes while the app is open or recording, the app
+  asks the developer's own service (on Vercel) for the Israel Meteorological Service's station
+  readings. The request carries a proof that it comes from the genuine app — Apple's App Attest:
+  a key made on the device for this purpose alone, certified once by Apple's servers (the device
+  asks Apple to vouch for the key; no personal data goes with it), which says nothing about you;
+  the service checks it and keeps nothing (where App Attest is unavailable, the app's key) — and
+  nothing about you or your position; like any web
+  request it reaches the host with your device's IP address. The developer's hosting provider,
+  Vercel, keeps short-lived request logs (IP address, time, path), which the developer does not use
+  to identify anyone (<a href="https://vercel.com/legal/privacy-policy">Vercel's privacy policy</a>). The same
+  service gives Megiddo aerodrome's runway wind, read from the aerodrome operator's own wind station
+  (with the operator's agreement): the app asks for it at most once a minute, only while Megiddo
+  is in the plan on screen, tapped on the map, or within about 25 NM. That request names only the
+  aerodrome and carries nothing about you or your position — the app's distance to Megiddo is
+  worked out on the phone; the service, not your phone, contacts the operator's station.</li>
+<li><strong>The app's identification in web requests</strong> — every request above carries iOS's standard
+  User-Agent header, which names the app, its build number and the iOS networking version (for
+  example "CVFRNav/1193 CFNetwork/… Darwin/…"); nothing that identifies you or the device.</li>
+<li><strong>Apple Maps</strong> — the map background and the place name shown when you tap the map come from
+  Apple's map services, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
+</ul>
+<h2>The US region (test builds only, for now)</h2>
+<p>Test builds can be switched to a basic US region (Settings → Region; not offered in the App Store
+version, which always runs in Israel). There:</p>
+<ul>
+<li><strong>METARs for the altimeter setting</strong> — the app asks NOAA's Aviation Weather Center
+  (<code>aviationweather.gov</code>, the US government's public data service) for the METARs of the stations
+  round the aircraft: the request names a box of about 100 NM round the aircraft with its corners
+  <strong>rounded to two decimals</strong> (about a kilometre), at most every 10 minutes or 25 NM, only while
+  the app is on screen or recording.</li>
+<li><strong>An airport's METAR and TAF</strong> — when you open a US airport, the app asks
+  <code>aviationweather.gov</code> for its reports by the airport's identifier (for example KFRG); the request
+  names only the airport.</li>
+<li><strong>The NWS's model forecast (LAMP)</strong> — when you open a US airport or a US plan, the app downloads
+  the National Weather Service's whole GFS LAMP bulletin from <code>tgftp.nws.noaa.gov</code> (one file for
+  every US station, at most about once an hour); the request names no airport and no position.</li>
+<li><strong>NOTAMs</strong> — the app asks CVFR Nav's own service (on Vercel, as above) for the NOTAMs round the
+  aircraft's position — or, without one, round the centre of the map — <strong>rounded to two
+  decimals</strong> (about a kilometre), every 10 minutes or after 20 NM; and, for a US plan, round
+  points along its route. The service asks the FAA's NOTAM service for them (the FAA's key stays on
+  the service) and keeps nothing; the special-use airspace offices' NOTAMs are asked by office,
+  with no position. The request carries the same App Attest proof as the weather service's.</li>
+<li>
+<p><strong>The FAA's sectional charts</strong> — with the Sectional map style, and to store a US plan's charts
+  for use without internet (or the charts round you, when you ask), the app downloads the chart's
+  pieces ("tiles") from the FAA's own chart service on ArcGIS Online (<code>tiles.arcgis.com</code>, run by
+  Esri for the FAA), and reads which chart edition it holds from <code>www.arcgis.com</code>. A tile request
+  names <strong>a square of the chart</strong> (its zoom level, row and column), never your position; the tiles
+  asked for show the area you are looking at or planning to fly. The stored tiles stay on your
+  device (not in its backup) and are deleted with the plan or from Settings.</p>
+</li>
+<li>
+<p><strong>TFRs</strong> — every 10 minutes the app asks CVFR Nav's own service for the FAA's list of temporary
+  flight restrictions with their shapes (the whole country's, from the FAA's TFR site
+  <code>tfr.faa.gov</code>); the request carries <strong>no position</strong> and the same App Attest proof.</p>
+</li>
+<li>
+<p><strong>Obstacles</strong> — the FAA's Digital Obstacle File is part of the app; showing it sends nothing.</p>
+</li>
+<li>
+<p><strong>Airport diagrams</strong> — the FAA's airport diagrams are downloaded from the developer's own site,
+  <code>cvfr.idra-tech.io</code> (GitHub Pages), and kept on the device: those of the airports in your US
+  plans and of the airports within about 50 NM of the aircraft, each once per FAA cycle (28 days),
+  with a small file naming the current cycle read at most every few hours. Each request names only
+  the airport (for example <code>KFRG.png</code>) and carries nothing else about you; which airports are asked
+  for follows your plans and roughly where the aircraft is. Like any web request it reaches GitHub
+  with your device's IP address
+  (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>).</p>
+</li>
+</ul>
+<p>Nothing else about you is sent; like any web request these reach their hosts with your device's IP
+address, and Vercel keeps its short-lived request logs (IP address, time, path — which here
+includes the rounded position) as above.</p>
+<h2>Test builds (TestFlight)</h2>
+<p>Pre-release builds given to invited test pilots send recorded flights to the developer while
+"Send recordings to the developer" is on in Settings — on by default in those builds, and the
+tester can switch it off: the track, the sensor log, the settings the flight was recorded with,
+the plan flown (route, callsign, aircraft, persons on board — not the filed plan's text nor the
+weight-and-balance load), the device-health lines (processor use, battery, how warm, Low Power
+Mode), the
+NOTAMs and radio reports seen during the flight, crash reports, the name the tester enters, the
+flight's signature with this device's public signing key (the same on every flight from the
+device, so it identifies the device; the developer's check notes a signing key not seen before
+for that tester), and the
+cockpit audio only if its own switch (off by default) is on too. Test builds also turn a Lightspeed
+Delta Zulu headset's Flight Recorder on and off at Record and Stop over the headset's own data
+channel, and write what was exchanged into the flight (the commands and the headset's replies —
+for a reply that may carry the headset's serial number, only its command and length). The App Store version cannot send anything. They
+are stored in Apple's CloudKit for the developer to find problems, and deleted on request.</p>
+<h2>Children</h2>
+<p>The app is not directed at children and collects nothing from anyone.</p>
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published at this address with a new effective date.
+Questions: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a>.</p>
+<footer>CVFR Nav — an assistance tool for VFR pilots in Israel. Not affiliated with or endorsed by the
+Civil Aviation Authority of Israel. Contact: <a href="mailto:cvfr.support@idra-tech.io">cvfr.support@idra-tech.io</a><br>
+© 2026 Ariel Feldman. All rights reserved.</footer>
+</main></body>
+</html>
