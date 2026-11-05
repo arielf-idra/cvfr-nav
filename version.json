@@ -1,0 +1,19 @@
+{
+ "pcVideo": {
+  "version": "0.20.0",
+  "url": "https://www.icloud.com/iclouddrive/09coKD7rT1KZXLRjIMVGBYxKw"
+ },
+ "internal": {
+  "version": "1.0.0",
+  "build": 2165
+ },
+ "external": {
+  "version": "1.0.0",
+  "build": 1993
+ },
+ "play": {
+  "version": "0.5.0",
+  "build": 5,
+  "url": "https://play.google.com/store/apps/details?id=io.idratech.cvfrnav"
+ }
+}
